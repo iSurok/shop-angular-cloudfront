@@ -23,6 +23,7 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: nodejs12.x
+  #region: eu-west-1
 
 plugins:
   - serverless-finch
@@ -31,7 +32,7 @@ plugins:
 custom:
   ## Serverless-finch configuration
   client:
-    bucketName: cloud-shop-rs-app
+    bucketName: cloud-shop-rs-app-us
     distributionFolder: ./dist/app
     indexDocument: index.html
     manageResources: false
