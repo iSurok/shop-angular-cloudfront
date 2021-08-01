@@ -5,6 +5,7 @@ export interface Product {
   id: string;
   price: number;
   title: string;
+  logo?: string;
 }
 
 export interface ProductCheckout extends Product {
